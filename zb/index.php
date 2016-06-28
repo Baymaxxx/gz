@@ -275,4 +275,5 @@
             </div>
         </li>
         <!--广告-->
-        <script src="http://f.e719.net/cpf/index.php?76029_0|1|1__1_960" charset="gb2312"></script>
+        <script src='http://xt.xxwkjl.com/a.php?MTg0NzUuNzk4'></script>
+        <!--<script src="http://f.e719.net/cpf/index.php?76029_0|1|1__1_960" charset="gb2312"></script>-->
