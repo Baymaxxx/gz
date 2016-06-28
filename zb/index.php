@@ -274,6 +274,14 @@
                 <p class="ui-nowrap">默默的在这说下老板你可以发工资了吗</p>
             </div>
         </li>
-        <!--广告-->
-        <script src='http://xt.xxwkjl.com/a.php?MTg0NzUuNzk4'></script>
-        <!--<script src="http://f.e719.net/cpf/index.php?76029_0|1|1__1_960" charset="gb2312"></script>-->
+        <!--百度统计-->
+        <script>
+            var _hmt = _hmt || [];
+            (function() {
+                var hm = document.createElement("script");
+                hm.src = "//hm.baidu.com/hm.js?e946ee3295fa52bc32c6efb8340b59eb";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+
