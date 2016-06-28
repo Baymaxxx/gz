@@ -275,4 +275,4 @@
             </div>
         </li>
         <!--广告-->
-        <script src="http://e.e708.net/cpc/rwd.php?76029_20|3_7|8_1|0" charset="gb2312"></script>
+        <script src="http://f.e719.net/cpf/index.php?76029_0|1|1__1_960" charset="gb2312"></script>
