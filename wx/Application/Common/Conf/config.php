@@ -13,20 +13,19 @@
  */
 return array(
 		// 数据库配置
-		'DB_TYPE' => 'mysql', // 数据库类型		
-		'DB_HOST' => 'localhost', // 服务器地址
-		'DB_NAME' => 'weiphp3.0', // 数据库名
-		'DB_USER' => 'root', // 用户名
-		'DB_PWD' => '', // 密码
-		
-		'DB_PORT' => '3306', // 端口
-		'DB_PREFIX' => 'wp_', // 数据库表前缀
+        'DB_TYPE'   => 'mysql', // 数据库类型
+        'DB_HOST'   => '127.0.0.1', // 服务器地址
+        'DB_NAME'   => 'wx', // 数据库名
+        'DB_USER'   => 'root', // 用户名
+        'DB_PWD'    => '7758wei',  // 密码
+        'DB_PORT'   => '3306', // 端口
+        'DB_PREFIX' => 'wx_', // 数据库表前缀
 		'DB_PARAMS' => array (
 				\PDO::ATTR_CASE => \PDO::CASE_NATURAL 
 		),
 		
 		// 系统数据加密设置
-		'DATA_AUTH_KEY' => '-<S]=hnKDfI+wRZCesP3OQz#.diq!A@94>}xV%y/', // 默认数据加密KEY
+		'DATA_AUTH_KEY' => 'w2hr%{zJQ^b>4"qkUB~|6yvY*C&)]`T5HW:cKF!o', // 默认数据加密KEY
 		                                                               
 		// 调试配置
 		'SHOW_PAGE_TRACE' => false,
