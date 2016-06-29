@@ -1,0 +1,539 @@
+[ 2016-06-29T14:51:14+08:00 ] ::1 /lnweb/gz/wx/index.php?s=/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+SQL: SHOW COLUMNS FROM `wx_hooks` [ RunTime:0.0272s ]
+SQL: SELECT `name`,`addons` FROM `wx_hooks`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wx_addons` [ RunTime:0.0047s ]
+SQL: SELECT `id`,`name` FROM `wx_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wx_plugin` [ RunTime:0.0057s ]
+SQL: SELECT `id`,`name` FROM `wx_plugin` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `wx_addons` WHERE `status` = 1 AND `name` IN ('SocialComment')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wx_plugin` WHERE `status` = 1 AND `name` IN ('SocialComment')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wx_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wx_plugin` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wx_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wx_plugin` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wx_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wx_plugin` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wx_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `wx_plugin` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name` FROM `wx_addons` WHERE `status` = 1 AND `name` IN ('Vote','Wecome','UserCenter','WeiSite','Hitegg','Leaflets','CustomReply','Survey','Diy','CustomMenu','Invite','Game','Ask','Forms','CardVouchers','RedBag','Guess','WishCard','RealPrize','ConfigureAccount','BusinessCard','AutoReply','Payment','Comment','ShopCoupon','Coupon','Card','SingIn','Reserve','Wuguai','Sms','Exam','Test','Draw','YaoTV','Analysis','Weiba','QrAdmin','PublicBind')  [ RunTime:0.0194s ]
+SQL: SELECT `id`,`name` FROM `wx_plugin` WHERE `status` = 1 AND `name` IN ('Vote','Wecome','UserCenter','WeiSite','Hitegg','Leaflets','CustomReply','Survey','Diy','CustomMenu','Invite','Game','Ask','Forms','CardVouchers','RedBag','Guess','WishCard','RealPrize','ConfigureAccount','BusinessCard','AutoReply','Payment','Comment','ShopCoupon','Coupon','Card','SingIn','Reserve','Wuguai','Sms','Exam','Test','Draw','YaoTV','Analysis','Weiba','QrAdmin','PublicBind')  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name` FROM `wx_addons` WHERE `status` = 1 AND `name` IN ('Cascade')  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name` FROM `wx_plugin` WHERE `status` = 1 AND `name` IN ('Cascade')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wx_addons` WHERE `status` = 1 AND `name` IN ('Diy')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wx_plugin` WHERE `status` = 1 AND `name` IN ('Diy')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `wx_addons` WHERE `status` = 1 AND `name` IN ('DynamicSelect')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `wx_plugin` WHERE `status` = 1 AND `name` IN ('DynamicSelect')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wx_addons` WHERE `status` = 1 AND `name` IN ('News')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wx_plugin` WHERE `status` = 1 AND `name` IN ('News')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wx_addons` WHERE `status` = 1 AND `name` IN ('DynamicCheckbox')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wx_plugin` WHERE `status` = 1 AND `name` IN ('DynamicCheckbox')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wx_addons` WHERE `status` = 1 AND `name` IN ('Material')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wx_plugin` WHERE `status` = 1 AND `name` IN ('Material')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wx_addons` WHERE `status` = 1 AND `name` IN ('Prize')  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name` FROM `wx_plugin` WHERE `status` = 1 AND `name` IN ('Prize')  [ RunTime:0.0006s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.507525s ]
+INFO: [ app_init ] --END-- [ RunTime:0.508291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001260s ]
+SQL: SHOW COLUMNS FROM `wx_config` [ RunTime:0.0090s ]
+SQL: SELECT `type`,`name`,`value` FROM `wx_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wx_user` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `wx_user` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wx_manager` [ RunTime:0.0076s ]
+SQL: SELECT `uid`,`has_public`,`headface_url`,`GammaAppId`,`GammaSecret`,`copy_right`,`tongji_code`,`website_logo` FROM `wx_manager` WHERE ( uid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wx_auth_group_access` [ RunTime:0.0067s ]
+SQL: SELECT a.group_id,g.title,g.type,g.icon FROM wx_auth_group_access a INNER JOIN wx_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wx_public_follow` [ RunTime:0.0073s ]
+SQL: SELECT `openid`,`token`,`uid`,`has_subscribe`,`syc_status`,`remark` FROM `wx_public_follow` WHERE ( uid='1' )  [ RunTime:0.0004s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\UserModel.class.php 第 251 行.
+NOTIC: [8] Undefined index:  E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\UserModel.class.php 第 271 行.
+NOTIC: [8] Undefined index:  E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\UserModel.class.php 第 272 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 3290 行.
+NOTIC: [8] Undefined variable: txt E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 3299 行.
+SQL: SHOW COLUMNS FROM `wx_user_tag_link` [ RunTime:0.0252s ]
+SQL: SELECT `tag_id` FROM `wx_user_tag_link` WHERE `uid` = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: uid E:\WEB\PHP\LNWEB\gz\wx\ThinkPHP\Library\Think\Controller.class.php 第 529 行.
+SQL: SHOW COLUMNS FROM `wx_manager_menu` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `wx_addons` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wx_addons` [ RunTime:0.1949s ]
+SQL: SHOW COLUMNS FROM `wx_public` [ RunTime:0.0063s ]
+SQL: SELECT `id`,`token` FROM `wx_public`  [ RunTime:0.0005s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wx_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined offset: 14 E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 106 行.
+NOTIC: [8] Undefined offset: 14 E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 116 行.
+NOTIC: [8] Undefined offset: 60 E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 106 行.
+NOTIC: [8] Undefined offset: 60 E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 116 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 14 E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 185 行.
+SQL: SHOW COLUMNS FROM `wx_public_link` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `wx_public_link` WHERE `uid` = 1  [ RunTime:0.0005s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wx_addons` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wx_attribute` [ RunTime:0.0063s ]
+SQL: UPDATE `wx_attribute` SET `extra`='111:帐号配置
+93:互动游戏
+18:欢迎语
+19:微信用户中心
+56:自定义菜单
+101:微信卡券
+39:微官网
+42:微信宣传页
+48:自定义回复
+50:微调研
+91:微邀约
+97:微抢答
+100:通用表单
+106:微信红包
+107:竞猜
+108:微贺卡
+110:实物奖励
+126:开发者工具箱
+128:微名片
+130:自动回复
+133:支付通
+134:投票
+137:评论互动
+140:没回答的回复
+141:工作授权
+142:优惠券
+143:帮拆礼包
+144:会员卡
+145:签到
+146:微预约
+151:短信服务
+152:微考试
+153:微测试
+162:微社区
+163:扫码管理
+156:比赛抽奖
+164:一键绑定公众号
+' WHERE `name` = 'addon_status' [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `wx_menu` [ RunTime:0.0069s ]
+SQL: SELECT `id`,`title`,`url` FROM `wx_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SELECT `pid` FROM `wx_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wx_menu` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT DISTINCT  `group` FROM `wx_menu` WHERE `group` <> '' AND `pid` = 43  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`url` FROM `wx_menu` WHERE `pid` = 43 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0008s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wx_menu` WHERE `group` = '扩展' AND `pid` = 43 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0007s ]
+
+[ 2016-06-29T14:51:15+08:00 ] ::1 /lnweb/gz/wx/index.php?s=/Admin/Config/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003327s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001045s ]
+NOTIC: [8] Undefined index: uid E:\WEB\PHP\LNWEB\gz\wx\ThinkPHP\Library\Think\Controller.class.php 第 529 行.
+SQL: SELECT `id`,`token` FROM `wx_public`  [ RunTime:0.0004s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wx_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined offset: 14 E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 106 行.
+NOTIC: [8] Undefined offset: 14 E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 116 行.
+NOTIC: [8] Undefined offset: 60 E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 106 行.
+NOTIC: [8] Undefined offset: 60 E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 116 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 14 E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 185 行.
+SQL: SELECT * FROM `wx_public_link` WHERE `uid` = 1  [ RunTime:0.0004s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wx_addons` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: UPDATE `wx_attribute` SET `extra`='111:帐号配置
+93:互动游戏
+18:欢迎语
+19:微信用户中心
+56:自定义菜单
+101:微信卡券
+39:微官网
+42:微信宣传页
+48:自定义回复
+50:微调研
+91:微邀约
+97:微抢答
+100:通用表单
+106:微信红包
+107:竞猜
+108:微贺卡
+110:实物奖励
+126:开发者工具箱
+128:微名片
+130:自动回复
+133:支付通
+134:投票
+137:评论互动
+140:没回答的回复
+141:工作授权
+142:优惠券
+143:帮拆礼包
+144:会员卡
+145:签到
+146:微预约
+151:短信服务
+152:微考试
+153:微测试
+162:微社区
+163:扫码管理
+156:比赛抽奖
+164:一键绑定公众号
+' WHERE `name` = 'addon_status' [ RunTime:0.0068s ]
+SQL: SELECT `id`,`title`,`url` FROM `wx_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `pid` FROM `wx_menu` WHERE ( pid !=0 AND url like '%Config/group%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wx_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`url` FROM `wx_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wx_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wx_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wx_config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000341s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000494s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070926s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071088s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001783s ]
+
+[ 2016-06-29T14:51:16+08:00 ] ::1 /lnweb/gz/wx/index.php?s=/Admin/update/getRemoteVersion.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004326s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001281s ]
+NOTIC: [8] Undefined index: uid E:\WEB\PHP\LNWEB\gz\wx\ThinkPHP\Library\Think\Controller.class.php 第 529 行.
+SQL: SELECT `id`,`token` FROM `wx_public`  [ RunTime:0.0004s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wx_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined offset: 14 E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 106 行.
+NOTIC: [8] Undefined offset: 14 E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 116 行.
+NOTIC: [8] Undefined offset: 60 E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 106 行.
+NOTIC: [8] Undefined offset: 60 E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 116 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 14 E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\ManagerMenuModel.class.php 第 185 行.
+SQL: SELECT * FROM `wx_public_link` WHERE `uid` = 1  [ RunTime:0.0006s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res E:\WEB\PHP\LNWEB\gz\wx\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wx_addons` WHERE `status` = 1  [ RunTime:0.0012s ]
+SQL: UPDATE `wx_attribute` SET `extra`='111:帐号配置
+93:互动游戏
+18:欢迎语
+19:微信用户中心
+56:自定义菜单
+101:微信卡券
+39:微官网
+42:微信宣传页
+48:自定义回复
+50:微调研
+91:微邀约
+97:微抢答
+100:通用表单
+106:微信红包
+107:竞猜
+108:微贺卡
+110:实物奖励
+126:开发者工具箱
+128:微名片
+130:自动回复
+133:支付通
+134:投票
+137:评论互动
+140:没回答的回复
+141:工作授权
+142:优惠券
+143:帮拆礼包
+144:会员卡
+145:签到
+146:微预约
+151:短信服务
+152:微考试
+153:微测试
+162:微社区
+163:扫码管理
+156:比赛抽奖
+164:一键绑定公众号
+' WHERE `name` = 'addon_status' [ RunTime:0.0070s ]
+SQL: SELECT `id`,`title`,`url` FROM `wx_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SELECT `pid` FROM `wx_menu` WHERE ( pid !=0 AND url like '%Update/getRemoteVersion%' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wx_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT DISTINCT  `group` FROM `wx_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`url` FROM `wx_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wx_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wx_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000852s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000992s ]
+
